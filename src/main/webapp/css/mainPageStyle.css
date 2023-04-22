@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dddddd;
+    height: 1500px;
+}
+
+#header-frame {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #1956b4;
+}
+
+#header-nav {
+    width: 1200px;
+    height: 60px;
+    display: inline-block;
+    font-size: 0;
+}
+
+#logo {
+    width: 190px;
+    display: inline-block;
+    font-size: medium;
+}
+
+#logoIMG {
+    width: 185px;
+    height: 60px;
+}
+
+#header-ul1 {
+    width: 810px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+#header-ul1 li {
+    width: 60px;
+    height: 60px;
+    padding: 0 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.header-option {
+    height: 60px;
+    line-height: 50px;
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+}
+
+.header-option:hover {
+    color: chocolate;
+}
+
+#header-ul2 {
+    width: 200px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+}
+
+#header-ul2 li {
+    width: 60px;
+    height: 60px;
+    padding: 0 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.lg-button {
+    width: 60px;
+    height: 60px;
+    border: 0;
+    line-height: 0;
+    background-color: transparent;
+    color: white;
+    font-size: large;
+    font-weight: bolder;
+}
+
+#main {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    /*background-color: cornflowerblue;*/
+}
+
+#main-page {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#search-box {
+    width: 900px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    overflow: auto;
+    /*background-color: chartreuse;*/
+}
+
+#job-search-from {
+    width: 900px;
+    height: 54px;
+    position: absolute;
+    margin-top: 40px;
+    background-color: white;
+    border: #1956b4 2px solid;
+    border-radius: 7px;
+    font-size: 0;
+}
+
+#job-search-input {
+    width: 790px;
+    height: 50px;
+    margin: 1px 10px;
+    border: 0;
+    background-color: transparent;
+    font-size: large;
+}
+
+#job-search-input:focus {
+    outline: none;
+}
+
+#job-search-submit {
+    width: 90px;
+    height: 54px;
+    border: 0;
+    background-color: #1956b4;
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+#hot-job {
+    width: 1200px;
+    height: 500px;
+    background-color: chocolate;
+    border-radius: 17px;
+}
+
+#hot-company {
+    width: 1200px;
+    height: 500px;
+    margin-top: 80px;
+    background-color: chocolate;
+    border-radius: 17px;
+}
+
+#footer {
+    width: 100%;
+    height: 45px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
