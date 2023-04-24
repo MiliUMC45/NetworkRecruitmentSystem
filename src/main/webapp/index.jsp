@@ -24,8 +24,8 @@
           <li><a class="header-option" href="#">公司</a></li>
         </ul>
         <ul id="header-ul2">
-          <li><button class="lg-button" type="button" value="login" onclick="">登录</button></li>
-          <li><button class="lg-button" type="button" value="register" onclick="">注册</button></li>
+          <li><a class="header-option" href="#">登录</a></li>
+          <li><a class="header-option" href="#">注册</a></li>
         </ul>
       </nav>
     </div>
@@ -43,6 +43,15 @@
         </div>
         <div id="hot-job">
           <h1>热招岗位</h1>
+          <ul class="cur">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <a class="more-info" href="#">查看更多</a>
         </div>
         <div id="hot-company">
           <h1>热门公司</h1>
