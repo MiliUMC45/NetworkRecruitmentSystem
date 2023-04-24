@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dddddd;
+    height: 100%;
+}
+
+#header-frame {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    background-color: #1956b4;
+}
+
+#header-nav {
+    width: 1200px;
+    height: 60px;
+    display: inline-block;
+    font-size: 0;
+}
+
+#logo {
+    width: 190px;
+    display: inline-block;
+    font-size: medium;
+}
+
+#logoIMG {
+    width: 185px;
+    height: 60px;
+}
+
+#header-ul1 {
+    width: 810px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+}
+
+#header-ul1 li {
+    width: 60px;
+    height: 60px;
+    padding: 0 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+.header-option {
+    height: 60px;
+    line-height: 50px;
+    display: inline-block;
+    outline: none;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bolder;
+    color: white;
+}
+
+.header-option:hover {
+    color: chocolate;
+}
+
+#header-ul2 {
+    width: 200px;
+    height: 60px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+}
+
+#main {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+
+.login-frame {
+    width: 44%;
+    height: 56%;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-header {
+    width: 400px;
+    height: 110px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.login-frame form {
+    width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-input {
+    width: 332px;
+    height: 50px;
+    margin: 0 auto 40px auto;
+    padding-left: 8px;
+    font-size: medium;
+    border-radius: 5px;
+}
+
+.button-frame {
+    width: 380px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.login-button {
+    width: 150px;
+    height: 50px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+
+#footer {
+    width: 100%;
+    height: 45px;
+    margin-top: 5px;
+    background-color: black;
+    text-align: center;
+    color: white;
+}

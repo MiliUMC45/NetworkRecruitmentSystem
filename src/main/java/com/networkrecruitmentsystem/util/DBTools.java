@@ -4,9 +4,9 @@ import java.sql.*;
 
 public class DBTools {
     public static Connection getConn() {
-        String DBurl = "jdbc:sqlserver://localhost:1433;DatabaseName=supermarket;encrypt=false;";
-        String DBUser = "admin";
-        String DBPwd = "987654321";
+        String DBurl = "jdbc:sqlserver://localhost:1433;DatabaseName=RecruitmentSystem;encrypt=false;";
+        String DBUser = "sa";
+        String DBPwd = "abc5048398";
         Connection connection = null;
         try {
             connection = DriverManager.getConnection(DBurl, DBUser, DBPwd);

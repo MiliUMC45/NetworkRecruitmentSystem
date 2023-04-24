@@ -5,7 +5,7 @@
 
 body {
     background-color: #dddddd;
-    height: 1400px;
+    height: 1600px;
 }
 
 #header-frame {
@@ -84,7 +84,6 @@ body {
     width: 1200px;
     height: 100%;
     margin: auto;
-    /*background-color: cornflowerblue;*/
 }
 
 #main-page {
@@ -99,7 +98,6 @@ body {
     margin: 0 auto;
     display: block;
     overflow: auto;
-    /*background-color: chartreuse;*/
 }
 
 #job-search-from {
@@ -140,14 +138,12 @@ body {
     width: 1200px;
     height: 500px;
     background-color: transparent;
-    border-radius: 17px;
     text-align: center;
 }
 
-.cur {
+.cur1 {
     width: 1200px;
     height: 400px;
-    border-radius: 17px;
     margin-top: 10px;
 }
 
@@ -155,8 +151,69 @@ body {
     width: 370px;
     height: 160px;
     display: inline-block;
-    margin: 5px 0 5px 10px;
+    margin: 5px 5px 20px 5px;
+    border-radius: 13px;
     background-color: white;
+}
+
+.hot-job-top {
+    width: 320px;
+    height: 70px;
+    display: block;
+    padding: 15px 25px 15px 25px;
+    font-size: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+.h-job-name {
+    width: 220px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+    text-align: left;
+}
+
+.h-job-pay {
+    width: 100px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    font-size: large;
+    font-weight: bolder;
+    color: red;
+    text-align: right;
+}
+
+.hot-job-bottom {
+    width: 320px;
+    height: 40px;
+    display: block;
+    padding: 10px 25px 10px 25px;
+    outline: none;
+    text-decoration: none;
+    font-size: 0;
+}
+
+.h-j-company-name {
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+    font-size: medium;
+    text-align: left;
+    color: black;
+}
+
+.h-j-company-kind {
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    font-size: medium;
+    text-align: right;
+    color: black;
 }
 
 .more-info {
@@ -175,7 +232,7 @@ body {
 
 #hot-company {
     width: 1200px;
-    height: 500px;
+    height: 800px;
     margin-top: 80px;
     background-color: chocolate;
     border-radius: 17px;
