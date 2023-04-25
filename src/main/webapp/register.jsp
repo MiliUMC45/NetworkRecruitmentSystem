@@ -19,7 +19,7 @@
                     <img src="image/logo.png" alt="logo" id="logoIMG">
                 </a>
                 <ul id="header-ul1">
-                    <li><a class="header-option" href="#">首页</a></li>
+                    <li><a class="header-option" href="mainPage.jsp">首页</a></li>
                     <li><a class="header-option" href="#">求职</a></li>
                     <li><a class="header-option" href="#">公司</a></li>
                 </ul>
@@ -27,8 +27,9 @@
             </nav>
         </div>
         <div id="main">
-            <div id="main-page">
-
+            <div class="register-frame">
+                <div class="register-header">注册</div>
+                
             </div>
         </div>
         <div id="footer">作者：2120332卓刘毅 2120348吴诚豪</div>
