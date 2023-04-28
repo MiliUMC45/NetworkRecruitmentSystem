@@ -11,6 +11,6 @@
         <title>网络招聘系统</title>
     </head>
     <body>
-        <jsp:forward page="mainPage.jsp"></jsp:forward>
+        <jsp:forward page="main_page.jsp"></jsp:forward>
     </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>登录</title>
-        <link rel="stylesheet" type="text/css" href="css/loginStyle.css">
+        <link rel="stylesheet" type="text/css" href="css/login_style.css">
         <script type="javascript" src="js/vue.js"></script>
         <script type="text/javascript" src="js/login.js"></script>
     </head>
@@ -13,7 +13,7 @@
                     <img src="image/logo.png" alt="logo" id="logoIMG">
                 </a>
                 <ul id="header-ul1">
-                    <li><a class="header-option" href="mainPage.jsp">首页</a></li>
+                    <li><a class="header-option" href="main_page.jsp">首页</a></li>
                     <li><a class="header-option" href="#">求职</a></li>
                     <li><a class="header-option" href="#">公司</a></li>
                 </ul>
@@ -24,11 +24,11 @@
             <div class="login-frame">
                 <div class="login-header">登录</div>
                 <form>
-                    <input class="login-input" type="text" name="username" placeholder="请输入用户名">
-                    <input class="login-input" type="password" name="password" placeholder="请输入密码">
+                    <input class="login-input" type="text" id="username" placeholder="请输入用户名">
+                    <input class="login-input" type="password" id="password" placeholder="请输入密码">
                 </form>
                 <div class="button-frame">
-                    <button class="login-button" type="submit" name="login" onclick="">登录</button>
+                    <button class="login-button" type="submit" name="login" onclick="login()">登录</button>
                     <button class="login-button" type="button" name="register" onclick="register()">注册</button>
                 </div>
             </div>

@@ -9,7 +9,7 @@
 <html>
     <head>
         <title>注册</title>
-        <link rel="stylesheet" type="text/css" href="css/registerStyle.css">
+        <link rel="stylesheet" type="text/css" href="css/register_style.css">
         <script type="javascript" src="js/vue.js"></script>
     </head>
     <body>
@@ -19,7 +19,7 @@
                     <img src="image/logo.png" alt="logo" id="logoIMG">
                 </a>
                 <ul id="header-ul1">
-                    <li><a class="header-option" href="mainPage.jsp">首页</a></li>
+                    <li><a class="header-option" href="main_page.jsp">首页</a></li>
                     <li><a class="header-option" href="#">求职</a></li>
                     <li><a class="header-option" href="#">公司</a></li>
                 </ul>

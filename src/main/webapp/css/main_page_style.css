@@ -10,6 +10,7 @@ body {
 
 #header-frame {
     width: 100%;
+    min-width: 1200px;
     height: 60px;
     text-align: center;
     background-color: #1956b4;
@@ -240,6 +241,7 @@ body {
 
 #footer {
     width: 100%;
+    min-width: 1200px;
     height: 45px;
     margin-top: 5px;
     background-color: black;
