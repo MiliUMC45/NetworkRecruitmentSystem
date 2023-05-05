@@ -20,9 +20,9 @@
           <img src="image/logo.png" alt="logo" id="logoIMG">
         </a>
         <ul id="header-ul1">
-          <li><a class="header-option" href="#">首页</a></li>
-          <li><a class="header-option" href="#">求职</a></li>
-          <li><a class="header-option" href="#">公司</a></li>
+          <li><a class="header-option" href="main_page.jsp">首页</a></li>
+          <li><a class="header-option" href="job_page.jsp">求职</a></li>
+          <li><a class="header-option" href="company_page.jsp">公司</a></li>
         </ul>
         <ul id="header-ul2">
           <li><a class="header-option" href="login.jsp">登录</a></li>
