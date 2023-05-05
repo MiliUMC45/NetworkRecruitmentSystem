@@ -1,7 +1,7 @@
 package com.networkrecruitmentsystem.bean;
 
 public class UserBean {
-/*  [user_id] [int] IDENTITY(1,1) NOT NULL,
+/*    [user_id] [int] IDENTITY(1,1) NOT NULL,
 	[username] [nchar](20) NOT NULL,
 	[password] [nchar](20) NOT NULL,
 	[sex] [nchar](1) NULL,

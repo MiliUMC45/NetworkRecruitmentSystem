@@ -10,6 +10,7 @@
 <html>
   <head>
     <title>网络招聘系统</title>
+    <link rel="stylesheet" type="text/css" href="css/normal_frame_style.css">
     <link rel="stylesheet" type="text/css" href="css/main_page_style.css">
     <script type="javascript" src="js/vue.js"></script>
   </head>

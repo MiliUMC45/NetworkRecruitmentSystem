@@ -9,6 +9,7 @@
 <html>
     <head>
         <title>注册</title>
+        <link rel="stylesheet" type="text/css" href="css/normal_frame_style.css">
         <link rel="stylesheet" type="text/css" href="css/register_style.css">
         <script type="javascript" src="js/vue.js"></script>
     </head>
@@ -29,7 +30,10 @@
         <div id="main">
             <div class="register-frame">
                 <div class="register-header">注册</div>
-                
+                <div class="choose-frame">
+                    <a class="choose" href="register_normal.jsp">我是求职者</a>
+                    <a class="choose" href="register_personnel.jsp">我是招聘者</a>
+                </div>
             </div>
         </div>
         <div id="footer">作者：2120332卓刘毅 2120348吴诚豪</div>

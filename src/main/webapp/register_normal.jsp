@@ -1,11 +1,17 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Loucey
+  Date: 2023/4/22
+  Time: 18:50
+  To change this template use File | Settings | File Templates.
+--%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
     <head>
-        <title>登录</title>
+        <title>注册</title>
         <link rel="stylesheet" type="text/css" href="css/normal_frame_style.css">
-        <link rel="stylesheet" type="text/css" href="css/login_style.css">
+        <link rel="stylesheet" type="text/css" href="css/register_style.css">
         <script type="javascript" src="js/vue.js"></script>
-        <script type="text/javascript" src="js/login.js"></script>
     </head>
     <body>
         <div id="header-frame">
@@ -22,16 +28,8 @@
             </nav>
         </div>
         <div id="main">
-            <div class="login-frame">
-                <div class="login-header">登录</div>
-                <form>
-                    <input class="login-input" type="text" id="username" placeholder="请输入用户名">
-                    <input class="login-input" type="password" id="password" placeholder="请输入密码">
-                </form>
-                <div class="button-frame">
-                    <button class="login-button" type="submit" name="login" onclick="login()">登录</button>
-                    <button class="login-button" type="button" name="register" onclick="register()">注册</button>
-                </div>
+            <div class="register-frame">
+                <div class="register-header">注册</div>
             </div>
         </div>
         <div id="footer">作者：2120332卓刘毅 2120348吴诚豪</div>
