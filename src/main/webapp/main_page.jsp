@@ -21,7 +21,7 @@
           <img src="image/logo.png" alt="logo" id="logoIMG">
         </a>
         <ul id="header-ul1">
-          <li><a class="header-option" href="main_page.jsp">首页</a></li>
+          <li><a class="header-option" href="MainPageServlet">首页</a></li>
           <li><a class="header-option" href="job_page.jsp">求职</a></li>
           <li><a class="header-option" href="company_page.jsp">公司</a></li>
         </ul>
@@ -46,20 +46,20 @@
         <div id="hot-job">
           <h1>热招岗位</h1>
           <ul class="cur1">
-            <c:forEach var="i" begin="1" end="6" step="1">
+            <c:forEach var="hotJob" items="${mainPageData.hotJobList}">
               <li>
                 <a href="#" class="hot-job-top">
-                  <div class="h-job-name">123</div>
-                  <div class="h-job-pay">123</div>
+                  <div class="h-job-name">${hotJob.getJobName()}</div>
+                  <div class="h-job-pay">${hotJob.getPay()}</div>
                 </a>
                 <a href="#" class="hot-job-bottom">
-                  <div class="h-j-company-name">123</div>
-                  <div class="h-j-company-kind">123</div>
+                  <div class="h-j-company-name">${hotJob.getCompanyName()}</div>
+                  <div class="h-j-company-kind">${hotJob.getCompanyKind()}</div>
                 </a>
               </li>
             </c:forEach>
           </ul>
-          <a class="more-info" href="#">查看更多</a>
+          <a class="more-info" href="job_page.jsp">查看更多</a>
         </div>
         <div id="hot-company">
           <h1>热门公司</h1>
