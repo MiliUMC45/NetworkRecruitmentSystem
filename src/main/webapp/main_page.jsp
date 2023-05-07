@@ -70,18 +70,19 @@
                 </a>
                 <div class="hot-com-list">
                   <a href="" class="hot-com-job">
-
+                    123
                   </a>
                   <a href="" class="hot-com-job">
-
+                    123
                   </a>
                   <a href="" class="hot-com-job">
-
+                    123
                   </a>
                 </div>
               </li>
             </c:forEach>
           </ul>
+          <a class="more-info" href="company_page.jsp">查看更多</a>
         </div>
       </div>
     </div>

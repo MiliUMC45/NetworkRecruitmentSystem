@@ -19,7 +19,9 @@ public class CompanyDao {
             rs = ps.executeQuery();
             while (rs.next()) {
                 String companyName = rs.getString("company_name");
+                String companyKind = rs.getString("kind");
                 hotJob.setCompanyName(companyName);
+                hotJob.setCompanyKind(companyKind);
             }
         } catch (Exception e) {
             e.printStackTrace();

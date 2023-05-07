@@ -8,13 +8,14 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class MainPageDao {
     public static void selectHotJob(MainPageBean mainData) {
         ArrayList<HotJobBean> arrayList = new ArrayList<HotJobBean>();
         for (int i = 1; i <= 6 ;i++) {
             HotJobBean hotJob = new HotJobBean();
-            JobDao.selectHotJobById(i, hotJob);
+            JobDao.selectHotJobById(ThreadLocalRandom.current().nextInt(1, 19), hotJob);
             arrayList.add(hotJob);
         }
         mainData.setHotJobList(arrayList);

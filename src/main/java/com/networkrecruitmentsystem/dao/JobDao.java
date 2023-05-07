@@ -6,7 +6,6 @@ import com.networkrecruitmentsystem.util.DBTools;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.util.ArrayList;
 
 public class JobDao {
     public static void selectHotJobById(int jobId, HotJobBean hotJob) {
@@ -18,7 +17,7 @@ public class JobDao {
             ps = conn.prepareStatement(sql);
             ps.setInt(1, jobId);
             rs = ps.executeQuery();
-            while (rs.next()) {
+            if (rs.next()) {
                 String jobName = rs.getString("job_name");
                 String pay = rs.getString("pay");
                 int company_id = rs.getInt("company_id");
