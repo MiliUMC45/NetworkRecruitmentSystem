@@ -3,9 +3,10 @@ package com.networkrecruitmentsystem.bean;
 public class HotJobBean {
     private int jobId;
     private String jobName;
+    private String pay;
+    private int companyId;
     private String companyName;
     private String companyKind;
-    private String pay;
 
     public HotJobBean() {
     }
@@ -34,6 +35,22 @@ public class HotJobBean {
         this.jobName = jobName;
     }
 
+    public String getPay() {
+        return pay;
+    }
+
+    public void setPay(String pay) {
+        this.pay = pay;
+    }
+
+    public int getCompanyId() {
+        return companyId;
+    }
+
+    public void setCompanyId(int companyId) {
+        this.companyId = companyId;
+    }
+
     public String getCompanyName() {
         return companyName;
     }
@@ -50,11 +67,4 @@ public class HotJobBean {
         this.companyKind = companyKind;
     }
 
-    public String getPay() {
-        return pay;
-    }
-
-    public void setPay(String pay) {
-        this.pay = pay;
-    }
 }

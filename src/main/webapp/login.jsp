@@ -4,7 +4,6 @@
         <title>登录</title>
         <link rel="stylesheet" type="text/css" href="css/normal_frame_style.css">
         <link rel="stylesheet" type="text/css" href="css/login_style.css">
-        <script type="javascript" src="js/vue.js"></script>
         <script type="text/javascript" src="js/login.js"></script>
     </head>
     <body>

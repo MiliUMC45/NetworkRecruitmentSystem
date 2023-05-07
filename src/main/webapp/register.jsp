@@ -11,7 +11,6 @@
         <title>注册</title>
         <link rel="stylesheet" type="text/css" href="css/normal_frame_style.css">
         <link rel="stylesheet" type="text/css" href="css/register_style.css">
-        <script type="javascript" src="js/vue.js"></script>
     </head>
     <body>
         <div id="header-frame">

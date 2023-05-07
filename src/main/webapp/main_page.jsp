@@ -12,12 +12,11 @@
     <title>网络招聘系统</title>
     <link rel="stylesheet" type="text/css" href="css/normal_frame_style.css">
     <link rel="stylesheet" type="text/css" href="css/main_page_style.css">
-    <script type="javascript" src="js/vue.js"></script>
   </head>
   <body>
     <div id="header-frame">
       <nav id="header-nav">
-        <a id="logo" href="#">
+        <a id="logo" href="MainPageServlet">
           <img src="image/logo.png" alt="logo" id="logoIMG">
         </a>
         <ul id="header-ul1">
@@ -66,9 +65,20 @@
           <ul class="cur2">
             <c:forEach var="i" begin="1" end="6" step="1">
               <li>
-                <a>
+                <a href="" class="hot-com-top">
 
                 </a>
+                <div class="hot-com-list">
+                  <a href="" class="hot-com-job">
+
+                  </a>
+                  <a href="" class="hot-com-job">
+
+                  </a>
+                  <a href="" class="hot-com-job">
+
+                  </a>
+                </div>
               </li>
             </c:forEach>
           </ul>
