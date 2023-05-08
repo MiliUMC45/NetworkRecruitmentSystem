@@ -193,6 +193,40 @@ body {
     text-decoration: none;
 }
 
+.hot-com-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+}
+
+.hot-com-info {
+    width: 270px;
+    height: 70px;
+    padding: 0 5px 0 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hot-com-name {
+    width: 260px;
+    height: 45px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+
+.hot-com-kind {
+    height: 25px;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    font-size: small;
+    color: gray;
+}
+
 .hot-com-list {
     width: 340px;
     height: 290px;
@@ -202,5 +236,27 @@ body {
 }
 
 .hot-com-job {
+    width: 340px;
+    height: 90px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    outline: none;
+    text-decoration: none;
+}
 
+.hot-c-j-name {
+    width: 200px;
+    height: 90px;
+    display: flex;
+    color: black;
+    text-align: left;
+}
+
+.hot-c-j-pay {
+    width: 140px;
+    height: 90px;
+    display: flex;
+    flex-direction: row-reverse;
+    color: red;
 }

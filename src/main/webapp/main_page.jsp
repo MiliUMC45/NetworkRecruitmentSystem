@@ -63,21 +63,22 @@
         <div id="hot-company">
           <h1>热门公司</h1>
           <ul class="cur2">
-            <c:forEach var="i" begin="1" end="6" step="1">
+            <c:forEach var="hotCompany" items="${mainPageData.hotCompanyList}">
               <li>
-                <a href="" class="hot-com-top">
-
+                <a href="#" class="hot-com-top">
+                  <img alt="" src="#" class="hot-com-icon">
+                  <div class="hot-com-info">
+                    <div class="hot-com-name">${hotCompany.getComName()}</div>
+                    <div class="hot-com-kind">${hotCompany.getComKind()}</div>
+                  </div>
                 </a>
                 <div class="hot-com-list">
-                  <a href="" class="hot-com-job">
-                    123
-                  </a>
-                  <a href="" class="hot-com-job">
-                    123
-                  </a>
-                  <a href="" class="hot-com-job">
-                    123
-                  </a>
+                  <c:forEach var="hotCompanyJob" items="${hotCompany.jobList}">
+                    <a href="" class="hot-com-job">
+                      <div class="hot-c-j-name">${hotCompanyJob.getJobName()}</div>
+                      <div class="hot-c-j-pay">${hotCompanyJob.getPay()}</div>
+                    </a>
+                  </c:forEach>
                 </div>
               </li>
             </c:forEach>

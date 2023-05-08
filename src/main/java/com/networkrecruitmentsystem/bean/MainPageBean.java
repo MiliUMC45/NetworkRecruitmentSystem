@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class MainPageBean {
     private ArrayList<HotJobBean> hotJobList;
-    private ArrayList hotCompanyList;
+    private ArrayList<HotCompanyBean> hotCompanyList;
 
     public MainPageBean() {
     }
 
-    public MainPageBean(ArrayList<HotJobBean> hotJobList, ArrayList hotCompanyList) {
+    public MainPageBean(ArrayList<HotJobBean> hotJobList, ArrayList<HotCompanyBean> hotCompanyList) {
         this.hotJobList = hotJobList;
         this.hotCompanyList = hotCompanyList;
     }
@@ -22,11 +22,11 @@ public class MainPageBean {
         this.hotJobList = hotJobList;
     }
 
-    public ArrayList getHotCompanyList() {
+    public ArrayList<HotCompanyBean> getHotCompanyList() {
         return hotCompanyList;
     }
 
-    public void setHotCompanyList(ArrayList hotCompanyList) {
+    public void setHotCompanyList(ArrayList<HotCompanyBean> hotCompanyList) {
         this.hotCompanyList = hotCompanyList;
     }
 }

@@ -1,14 +1,17 @@
 package com.networkrecruitmentsystem.dao;
 
+import com.networkrecruitmentsystem.bean.HotCompanyBean;
 import com.networkrecruitmentsystem.bean.HotJobBean;
+import com.networkrecruitmentsystem.bean.JobBean;
 import com.networkrecruitmentsystem.util.DBTools;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 public class JobDao {
-    public static void selectHotJobById(int jobId, HotJobBean hotJob) {
+    public static void selectHotJobByJobId(int jobId, HotJobBean hotJob) {
         Connection conn = DBTools.getConn();
         PreparedStatement ps = null;
         ResultSet rs = null;
@@ -27,8 +30,34 @@ public class JobDao {
                 hotJob.setPay(pay);
                 hotJob.setCompanyId(company_id);
 
-                CompanyDao.selectHotJobByCompanyId(company_id, hotJob);
+                CompanyDao.selectHotJobCompanyByCompanyId(company_id, hotJob);
             }
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            DBTools.closeDBResource(rs, ps, conn);
+        }
+    }
+
+    public static void selectJobByCompanyId(int companyId, HotCompanyBean hotCompany) {
+        Connection conn = DBTools.getConn();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        String sql = "SELECT * FROM job WHERE company_id=?";
+        ArrayList<JobBean> jobList = new ArrayList<>();
+        try {
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1, companyId);
+            rs = ps.executeQuery();
+            for (int i = 1; i <= 3 && rs.next(); i++) {
+                String jobName = rs.getString("job_name");
+                String pay = rs.getString("pay");
+                JobBean job = new JobBean();
+                job.setJobName(jobName);
+                job.setPay(pay);
+                jobList.add(job);
+            }
+            hotCompany.setJobList(jobList);
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

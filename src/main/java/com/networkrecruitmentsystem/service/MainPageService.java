@@ -6,5 +6,6 @@ import com.networkrecruitmentsystem.dao.MainPageDao;
 public class MainPageService {
     public static void prepareMainData(MainPageBean mainPage) {
         MainPageDao.selectHotJob(mainPage);
+        MainPageDao.selectHotCompany(mainPage);
     }
 }
