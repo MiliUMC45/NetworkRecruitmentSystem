@@ -1,14 +1,15 @@
 package com.networkrecruitmentsystem.bean;
 
-public class JobPageItemBean {
-    private int jobId;
-    private String jobName;
-    private String pay;
-    private int companyId;
-    private String companyName;
-    private String companyKind;
-    private String icon;
+public class JobPageItemBean {  //职位页面单个职位数据封装类
+    private int jobId;  //职位ID
+    private String jobName; //职位名
+    private String pay; //职位薪酬
+    private int companyId;  //职位所属公司ID
+    private String companyName; //职位所属公司名
+    private String companyKind; //职位所属公司类别
+    private String icon;    //职位所属公司图标地址
 
+    //构造方法
     public JobPageItemBean() {
     }
 
@@ -19,6 +20,7 @@ public class JobPageItemBean {
         this.companyId = companyId;
     }
 
+    //各变量getter和setter方法
     public int getJobId() {
         return jobId;
     }

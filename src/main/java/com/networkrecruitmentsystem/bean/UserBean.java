@@ -1,20 +1,20 @@
 package com.networkrecruitmentsystem.bean;
 
-public class UserBean {
+public class UserBean { //普通用户数据封装类
 /*    [user_id] [int] IDENTITY(1,1) NOT NULL,
 	[username] [nchar](20) NOT NULL,
 	[password] [nchar](20) NOT NULL,
 	[sex] [nchar](1) NULL,
     [email] [nchar](30) NULL,
     [telephone] [nchar](11) NULL*/
+    private int userId; //用户ID
+    private String username;    //用户名
+    private String password;    //用户密码
+    private String sex; //用户性别
+    private String email;   //用户电子邮件地址
+    private String telephone;   //用户电话
 
-    private int userId;
-    private String username;
-    private String password;
-    private String sex;
-    private String email;
-    private String telephone;
-
+    //构造方法
     public UserBean() {
     }
 
@@ -32,6 +32,7 @@ public class UserBean {
         this.telephone = telephone;
     }
 
+    //各变量getter和setter方法
     public int getUserId() {
         return userId;
     }

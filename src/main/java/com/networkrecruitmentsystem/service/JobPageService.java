@@ -5,8 +5,8 @@ import com.networkrecruitmentsystem.dao.JobDao;
 
 public class JobPageService {
     public static void prepareJobData(JobPageBean jobData) {
-        if (jobData.getKeyword() != null) {
-            JobDao.selectJobForJobPage(jobData);
-        }
+        //准备职位数据方法
+        //调用Dao层获取职位数据
+        JobDao.selectJobForJobPage(jobData);
     }
 }

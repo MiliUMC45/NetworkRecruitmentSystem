@@ -13,9 +13,11 @@ import java.io.IOException;
 @WebServlet(name = "MainPageServlet", value = "/MainPageServlet")
 public class MainPageServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        //封装数据
         MainPageBean mainPage = new MainPageBean();
+        //调用service逻辑处理
         MainPageService.prepareMainData(mainPage);
-
+        //向请求中添加变量并转发请求到主页
         request.setAttribute("mainPageData", mainPage);
         request.getRequestDispatcher("main_page.jsp").forward(request, response);
     }

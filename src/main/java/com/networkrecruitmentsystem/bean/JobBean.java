@@ -1,15 +1,17 @@
 package com.networkrecruitmentsystem.bean;
 
-public class JobBean {
-    private int jobId;
-    private String jobName;
-    private String pay;
-    private int companyId;
-    private String introduction;
+public class JobBean {  //职位数据封装类
+    private int jobId;  //职位ID
+    private String jobName; //职位名
+    private String pay; //职位薪酬
+    private int companyId;  //职位所属公司ID
+    private String introduction;    //职位描述
 
+    //构造方法
     public JobBean() {
     }
 
+    //各变量getter和setter方法
     public int getJobId() {
         return jobId;
     }

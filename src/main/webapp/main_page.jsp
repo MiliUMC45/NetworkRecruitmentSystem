@@ -33,10 +33,10 @@
     <div id="main">
       <div id="main-page">
         <div id="search-box">
-          <form action="" method="get">
+          <form action="JobPageServlet" method="get">
             <div id="job-search-from">
               <label>
-                <input id="job-search-input" type="text" name="job-search" placeholder="搜索职位">
+                <input id="job-search-input" type="text" name="keyword" placeholder="搜索职位">
               </label>
               <input id="job-search-submit" type="submit" name="submit" onclick="" value="搜索">
             </div>

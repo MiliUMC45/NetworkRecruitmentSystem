@@ -137,3 +137,26 @@ body {
     color: gray;
     font-size: medium;
 }
+
+.curPage {
+    width: 1200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.curPage a {
+    width: 39px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1956b4;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.curPage a:hover {
+    background-color: gray;
+}

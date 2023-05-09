@@ -1,13 +1,14 @@
 package com.networkrecruitmentsystem.bean;
 
-public class HotJobBean {
-    private int jobId;
-    private String jobName;
-    private String pay;
-    private int companyId;
-    private String companyName;
-    private String companyKind;
+public class HotJobBean {   //热门职位数据封装类
+    private int jobId;  //职位ID
+    private String jobName; //职位名
+    private String pay; //职位薪酬
+    private int companyId;  //职位所属公司ID
+    private String companyName; //职位所属公司名
+    private String companyKind; //职位所属公司类别
 
+    //构造方法
     public HotJobBean() {
     }
 
@@ -19,6 +20,7 @@ public class HotJobBean {
         this.pay = pay;
     }
 
+    //各变量的getter和setter方法
     public int getJobId() {
         return jobId;
     }

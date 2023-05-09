@@ -33,10 +33,10 @@
     <div id="main">
       <div id="main-page">
         <div id="search-box">
-          <form action="" method="get">
+          <form action="JobPageServlet" method="get">
             <div id="job-search-from">
               <label>
-                <input id="job-search-input" type="text" name="job-search" placeholder="搜索职位">
+                <input id="job-search-input" type="text" name="keyword" placeholder="搜索职位">
               </label>
               <input id="job-search-submit" type="submit" name="submit" onclick="" value="搜索">
             </div>
@@ -60,11 +60,11 @@
           </c:forEach>
         </div>
         <div class="curPage">
-          <a href="#">«</a>
+          <a href="JobPageServlet?curPage=${jobData.firstPageForNavigation}">«</a>
           <c:forEach var="i" begin="${jobData.firstPageForNavigation}" end="${jobData.lastPageForNavigation}">
             <a id="page${i}" href="JobPageServlet?curPage=${i}">${i}</a>
           </c:forEach>
-          <a href="#">»</a>
+          <a href="JobPageServlet?curPage=${jobData.lastPageForNavigation}">»</a>
         </div>
       </div>
     </div>

@@ -2,10 +2,11 @@ package com.networkrecruitmentsystem.bean;
 
 import java.util.ArrayList;
 
-public class MainPageBean {
-    private ArrayList<HotJobBean> hotJobList;
-    private ArrayList<HotCompanyBean> hotCompanyList;
+public class MainPageBean { //主页数据封装类
+    private ArrayList<HotJobBean> hotJobList;   //热门职位数据列表
+    private ArrayList<HotCompanyBean> hotCompanyList;   //热门公司数据列表
 
+    //构造方法
     public MainPageBean() {
     }
 
@@ -14,6 +15,7 @@ public class MainPageBean {
         this.hotCompanyList = hotCompanyList;
     }
 
+    //各变量getter和setter方法
     public ArrayList<HotJobBean> getHotJobList() {
         return hotJobList;
     }

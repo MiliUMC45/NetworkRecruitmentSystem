@@ -1,6 +1,6 @@
 package com.networkrecruitmentsystem.bean;
 
-public class PersonnelBean {
+public class PersonnelBean {    //人事用户数据封装类
 /*    [personnel_id] [int] IDENTITY(1,1) NOT NULL,
 	[company_id] [int] NOT NULL,
 	[company_name] [nvarchar](30) NOT NULL,
@@ -8,14 +8,15 @@ public class PersonnelBean {
 	[telephone] [nchar](11) NULL,
     [email] [nchar](30) NULL,
     [sex] [nchar](1) NULL,*/
-    private int perId;
-    private int comId;
-    private String comName;
-    private String perPwd;
-    private String perTel;
-    private String perEmail;
-    private String perSex;
+    private int perId;  //用户ID
+    private int comId;  //用户所属公司ID
+    private String comName; //用户所属公司名
+    private String perPwd;  //用户密码
+    private String perTel;  //用户电话
+    private String perEmail;    //用户邮箱地址
+    private String perSex;  //用户性别
 
+    //构造方法
     public PersonnelBean() {
     }
 
@@ -33,6 +34,7 @@ public class PersonnelBean {
         this.perSex = perSex;
     }
 
+    //各变量getter和setter方法
     public int getPerId() {
         return perId;
     }

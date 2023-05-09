@@ -2,19 +2,20 @@ package com.networkrecruitmentsystem.bean;
 
 import java.util.ArrayList;
 
-public class JobPageBean {
-    private String keyword;
-    private int curPage;
-    private int jobsAPage = 10;
-    private int totalJobs;
-    private int totalPages;
+public class JobPageBean {  //职位页面数据封装类
+    private String keyword; //关键词，用于搜索职位
+    private int curPage;    //当前页面
+    private int jobsAPage = 10; //每页最大展示职位数
+    private int totalJobs;  //查询到的总职位数
+    private int totalPages; //查询到的总页数
     private int pagesForNavigation = 5; //导航栏上最多显示页数
     private int cycleForNavigation; //导航栏切换周期
     private int firstPageForNavigation; //记录导航栏的第一个页码 cycleForNavigation * pagesForNavigation + 1
     private int lastPageForNavigation;  //记录导航栏的最后一个页码totalPages和cycleForNavigation * pagesForNavigation + 5的最小值
 
-    private ArrayList<JobPageItemBean> jobList;
+    private ArrayList<JobPageItemBean> jobList; //职位数据列表
 
+    //构造方法
     public JobPageBean() {
     }
 
@@ -23,6 +24,7 @@ public class JobPageBean {
         this.curPage = curPage;
     }
 
+    //各变量getter和setter方法
     public String getKeyword() {
         return keyword;
     }
