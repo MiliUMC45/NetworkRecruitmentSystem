@@ -1,5 +1,139 @@
+body {
+    min-height: 1100px;
+}
+
 #main {
     width: 1200px;
-    height: 100%;
+    height: 1040px;
     margin: auto;
+}
+
+#main-page {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#search-box {
+    width: 900px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    overflow: auto;
+}
+
+#job-search-from {
+    width: 900px;
+    height: 54px;
+    position: absolute;
+    margin-top: 40px;
+    background-color: white;
+    border: #1956b4 2px solid;
+    border-radius: 7px;
+    font-size: 0;
+}
+
+#job-search-input {
+    width: 790px;
+    height: 50px;
+    margin: 1px 10px;
+    border: 0;
+    background-color: transparent;
+    font-size: large;
+}
+
+#job-search-input:focus {
+    outline: none;
+}
+
+#job-search-submit {
+    width: 90px;
+    height: 54px;
+    border: 0;
+    background-color: #1956b4;
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
+}
+
+.job-frame {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.job-item {
+    width: 540px;
+    height: 110px;
+    margin: 0 15px 35px 15px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.job-info {
+    width: 290px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+}
+
+.job-name {
+    width: 290px;
+    height: 70px;
+    display: flex;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.job-pay {
+    width: 290px;
+    height: 40px;
+    display: flex;
+    color: red;
+    font-size: large;
+    font-weight: bold;
+}
+
+.company {
+    width: 250px;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+}
+
+.company-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+}
+
+.company-info {
+    width: 170px;
+    height: 100px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.company-name {
+    width: 170px;
+    height: 45px;
+    display: flex;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.company-kind {
+    width: 170px;
+    height: 25px;
+    display: flex;
+    color: gray;
+    font-size: medium;
 }

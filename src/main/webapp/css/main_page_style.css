@@ -174,7 +174,7 @@ body {
 
 #hot-company ul li {
     width: 390px;
-    height: 420px;
+    height: 370px;
     display: flex;
     flex-direction: column;
     margin: 5px 5px 10px 5px;
@@ -184,11 +184,10 @@ body {
 
 .hot-com-top {
     width: 340px;
-    height: 70px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     padding: 15px 25px 15px 25px;
-    font-size: 0;
     outline: none;
     text-decoration: none;
 }
@@ -229,7 +228,7 @@ body {
 
 .hot-com-list {
     width: 340px;
-    height: 290px;
+    height: 270px;
     padding: 15px 25px 15px 25px;
     display: flex;
     flex-direction: column;
@@ -237,7 +236,7 @@ body {
 
 .hot-com-job {
     width: 340px;
-    height: 90px;
+    height: 70px;
     margin-bottom: 5px;
     display: flex;
     flex-direction: row;
@@ -247,7 +246,7 @@ body {
 
 .hot-c-j-name {
     width: 200px;
-    height: 90px;
+    height: 70px;
     display: flex;
     color: black;
     text-align: left;
@@ -255,7 +254,7 @@ body {
 
 .hot-c-j-pay {
     width: 140px;
-    height: 90px;
+    height: 70px;
     display: flex;
     flex-direction: row-reverse;
     color: red;

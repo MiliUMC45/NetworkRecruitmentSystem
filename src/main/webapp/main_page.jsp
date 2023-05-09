@@ -21,7 +21,7 @@
         </a>
         <ul id="header-ul1">
           <li><a class="header-option" href="MainPageServlet">首页</a></li>
-          <li><a class="header-option" href="job_page.jsp">求职</a></li>
+          <li><a class="header-option" href="JobPageServlet">求职</a></li>
           <li><a class="header-option" href="company_page.jsp">公司</a></li>
         </ul>
         <ul id="header-ul2">
@@ -72,6 +72,7 @@
                     <div class="hot-com-kind">${hotCompany.getComKind()}</div>
                   </div>
                 </a>
+                <hr/>
                 <div class="hot-com-list">
                   <c:forEach var="hotCompanyJob" items="${hotCompany.jobList}">
                     <a href="" class="hot-com-job">
