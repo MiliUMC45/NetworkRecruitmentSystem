@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 洛佑希
-  Date: 2023/4/15
-  Time: 22:31
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
@@ -45,12 +38,12 @@
         <div class="job-frame">
           <c:forEach var="jobItem" items="${jobData.jobList}">
             <div class="job-item">
-              <div class="job-info">
+              <a href="JobDetailServlet?jobId=${jobItem.getJobId()}" class="job-info">
                 <div class="job-name">${jobItem.getJobName()}</div>
                 <div class="job-pay">${jobItem.getPay()}</div>
-              </div>
+              </a>
               <div class="company">
-                <img alt="" src="" class="company-icon">
+                <img alt="" src="${jobItem.getIcon()}" class="company-icon">
                 <div class="company-info">
                   <div class="company-name">${jobItem.getCompanyName()}</div>
                   <div class="company-kind">${jobItem.getCompanyKind()}</div>

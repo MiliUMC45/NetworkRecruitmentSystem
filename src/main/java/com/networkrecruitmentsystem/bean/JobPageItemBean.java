@@ -76,17 +76,4 @@ public class JobPageItemBean {  //职位页面单个职位数据封装类
     public void setIcon(String icon) {
         this.icon = icon;
     }
-
-    @Override
-    public String toString() {
-        return "JobPageItemBean{" +
-                "jobId=" + jobId +
-                ", jobName='" + jobName + '\'' +
-                ", pay='" + pay + '\'' +
-                ", companyId=" + companyId +
-                ", companyName='" + companyName + '\'' +
-                ", companyKind='" + companyKind + '\'' +
-                ", icon='" + icon + '\'' +
-                '}';
-    }
 }

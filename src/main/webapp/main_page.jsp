@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 洛佑希
-  Date: 2023/4/15
-  Time: 22:31
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
@@ -47,7 +40,7 @@
           <ul class="cur1">
             <c:forEach var="hotJob" items="${mainPageData.hotJobList}">
               <li>
-                <a href="#" class="hot-job-top">
+                <a href="JobDetailServlet?jobId=${hotJob.getJobId()}" class="hot-job-top">
                   <div class="h-job-name">${hotJob.getJobName()}</div>
                   <div class="h-job-pay">${hotJob.getPay()}</div>
                 </a>
@@ -58,7 +51,7 @@
               </li>
             </c:forEach>
           </ul>
-          <a class="more-info" href="job_page.jsp">查看更多</a>
+          <a class="more-info" href="JobPageServlet">查看更多</a>
         </div>
         <div id="hot-company">
           <h1>热门公司</h1>
@@ -66,7 +59,7 @@
             <c:forEach var="hotCompany" items="${mainPageData.hotCompanyList}">
               <li>
                 <a href="#" class="hot-com-top">
-                  <img alt="" src="#" class="hot-com-icon">
+                  <img alt="" src="${hotCompany.getComIcon()}" class="hot-com-icon">
                   <div class="hot-com-info">
                     <div class="hot-com-name">${hotCompany.getComName()}</div>
                     <div class="hot-com-kind">${hotCompany.getComKind()}</div>
@@ -75,7 +68,7 @@
                 <hr/>
                 <div class="hot-com-list">
                   <c:forEach var="hotCompanyJob" items="${hotCompany.jobList}">
-                    <a href="" class="hot-com-job">
+                    <a href="JobDetailServlet?jobId=${hotCompanyJob.getJobId()}" class="hot-com-job">
                       <div class="hot-c-j-name">${hotCompanyJob.getJobName()}</div>
                       <div class="hot-c-j-pay">${hotCompanyJob.getPay()}</div>
                     </a>

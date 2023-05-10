@@ -11,6 +11,10 @@ public class JobBean {  //职位数据封装类
     public JobBean() {
     }
 
+    public JobBean(int jobId) {
+        this.jobId = jobId;
+    }
+
     //各变量getter和setter方法
     public int getJobId() {
         return jobId;

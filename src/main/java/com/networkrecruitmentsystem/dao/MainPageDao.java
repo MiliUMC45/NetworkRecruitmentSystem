@@ -36,7 +36,7 @@ public class MainPageDao {
             //通过公司ID查询热门公司数据
             CompanyDao.selectHotCompanyByCompanyId(i, hotCompany);
             //通过公司ID查询相应公司职位数据
-            JobDao.selectJobByCompanyId(hotCompany.getComId(), hotCompany);
+            JobDao.selectJobByHotCompanyId(hotCompany.getComId(), hotCompany);
             //将查询到的数据加入数组
             arrayList.add(hotCompany);
         }

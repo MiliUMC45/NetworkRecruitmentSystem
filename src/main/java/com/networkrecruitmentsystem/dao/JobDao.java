@@ -43,7 +43,7 @@ public class JobDao {
         }
     }
 
-    public static void selectJobByCompanyId(int companyId, HotCompanyBean hotCompany) {
+    public static void selectJobByHotCompanyId(int companyId, HotCompanyBean hotCompany) {
         //通过公司ID获取热门公司职位信息
         //建立数据库连接
         Connection conn = DBTools.getConn();
@@ -60,10 +60,12 @@ public class JobDao {
             //最多获取3个职位信息
             for (int i = 1; i <= 3 && rs.next(); i++) {
                 //获取数据
+                int jobId = rs.getInt("job_id");
                 String jobName = rs.getString("job_name");
                 String pay = rs.getString("pay");
                 //封装数据
                 JobBean job = new JobBean();
+                job.setJobId(jobId);
                 job.setJobName(jobName);
                 job.setPay(pay);
                 //将数据模型加入数组
@@ -150,6 +152,40 @@ public class JobDao {
             }
             //封装数据
             jobData.setJobList(arrayList);
+        } catch (Exception e) {
+            //输出错误信息
+            e.printStackTrace();
+        } finally {
+            //释放数据库连接资源
+            DBTools.closeDBResource(rs, ps, conn);
+        }
+    }
+
+    public static void selectJobByJobId(JobBean job) {
+        //获取职位细节方法
+        //建立数据库连接
+        Connection conn = DBTools.getConn();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        String sql = "SELECT * FROM job WHERE job_id=?";
+        try {
+            //预编译SQL语句，执行并获取结果
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1, job.getJobId());
+            rs = ps.executeQuery();
+            //最多获取3个职位信息
+            while (rs.next()){
+                //获取数据
+                String jobName = rs.getString("job_name");
+                String pay = rs.getString("pay");
+                int companyId = rs.getInt("company_id");
+                String introduction = rs.getString("introduction");
+                //封装数据
+                job.setJobName(jobName);
+                job.setPay(pay);
+                job.setCompanyId(companyId);
+                job.setIntroduction(introduction);
+            }
         } catch (Exception e) {
             //输出错误信息
             e.printStackTrace();
