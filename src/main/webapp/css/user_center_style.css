@@ -1,0 +1,98 @@
+#main-page {
+    width: 1200px;
+    min-height: 900px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: auto;
+}
+
+.user-nav {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-nav li {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+}
+
+.user-nav li a {
+    margin: 10px;
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+    color: #1956b4;
+    outline: none;
+    text-decoration: none;
+}
+
+.line {
+    width: 1px;
+    background-color: gray;
+}
+
+.user-info {
+    width: 1000px;
+    display: flex;
+}
+
+.info-form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-text {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+}
+
+.job-posted {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.job-action {
+    width: 980px;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.job-action-button {
+    width: 146px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    color: #1956b4;
+    background-color: white;
+    border: #1956b4 2px solid;
+    border-radius: 7px;
+}
+
+.job-action-button:hover {
+    color: white;
+    background-color: #1956b4;
+}
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+    width: 980px;
+    padding: 10px;
+}
+
+.job-list li {
+    display: flex;
+    width: 980px;
+    height: 40px;
+}

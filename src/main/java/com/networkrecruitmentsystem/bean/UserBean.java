@@ -13,6 +13,7 @@ public class UserBean { //普通用户数据封装类
     private String sex; //用户性别
     private String email;   //用户电子邮件地址
     private String telephone;   //用户电话
+    private String kind;    //用户类别
 
     //构造方法
     public UserBean() {
@@ -79,5 +80,13 @@ public class UserBean { //普通用户数据封装类
 
     public void setTelephone(String telephone) {
         this.telephone = telephone;
+    }
+
+    public String getKind() {
+        return kind;
+    }
+
+    public void setKind(String kind) {
+        this.kind = kind;
     }
 }
