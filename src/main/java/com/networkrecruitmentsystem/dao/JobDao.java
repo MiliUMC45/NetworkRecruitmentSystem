@@ -194,4 +194,107 @@ public class JobDao {
             DBTools.closeDBResource(rs, ps, conn);
         }
     }
+
+    public static void selectJobWhichPosted(int comId, ArrayList<JobBean> jobDate) {
+        //根据公司ID为已发布职位页面获取职位信息
+        //建立数据库连接
+        Connection conn = DBTools.getConn();
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        String sql = "SELECT * FROM job WHERE company_id=?";
+        try {
+            //预编译SQL语句，执行并获取结果
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1, comId);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                //获取数据
+                int jobId = rs.getInt("job_id");
+                String jobName = rs.getString("job_name");
+                String pay = rs.getString("pay");
+                String introduction = rs.getString("introduction");
+                //封装数据
+                JobBean job = new JobBean(jobId, jobName, pay, introduction);
+                jobDate.add(job);
+            }
+        } catch (Exception e) {
+            //输出错误信息
+            e.printStackTrace();
+        } finally {
+            //释放数据库连接资源
+            DBTools.closeDBResource(rs, ps, conn);
+        }
+    }
+
+    public static void updateJobByJobId(JobBean jobDate) {
+        //更新数据库职位信息
+        //建立数据库连接
+        Connection conn = DBTools.getConn();
+        PreparedStatement ps = null;
+        String sql = "UPDATE job SET job_name=?, pay=?, introduction=? WHERE job_id=?";
+        try {
+            //检查职位表自增主键值
+            DBTools.checkDBIdent("job");
+            //预编译SQL语句并执行
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, jobDate.getJobName());
+            ps.setString(2, jobDate.getPay());
+            ps.setString(3, jobDate.getIntroduction());
+            ps.setInt(4,jobDate.getJobId());
+            ps.executeUpdate();
+        } catch (Exception e) {
+            //输出错误信息
+            e.printStackTrace();
+        } finally {
+            //释放数据库连接资源
+            DBTools.closeDBResource(null, ps, conn);
+        }
+    }
+
+    public static void insertJobDate(JobBean jobDate) {
+        //将新职位信息插入数据库
+        //建立数据库连接
+        Connection conn = DBTools.getConn();
+        PreparedStatement ps = null;
+        String sql = "INSERT INTO job VALUES (?, ?, ?, ?)";
+        try {
+            //检查职位表自增主键值
+            DBTools.checkDBIdent("job");
+            //预编译SQL语句并执行
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, jobDate.getJobName());
+            ps.setString(2, jobDate.getPay());
+            ps.setInt(3, jobDate.getCompanyId());
+            ps.setString(4, jobDate.getIntroduction());
+            ps.executeUpdate();
+        } catch (Exception e) {
+            //输出错误信息
+            e.printStackTrace();
+        } finally {
+            //释放数据库连接资源
+            DBTools.closeDBResource(null, ps, conn);
+        }
+    }
+
+    public static void deleteJobDateByJobId(int jobId) {
+        //通过职位ID删除职位信息
+        //建立数据库连接
+        Connection conn = DBTools.getConn();
+        PreparedStatement ps = null;
+        String sql = "DELETE FROM job WHERE job_id=" + jobId;
+        try {
+            //预编译SQL语句并执行
+            ps = conn.prepareStatement(sql);
+            ps.executeUpdate();
+            DBTools.checkDBIdent("job");
+            //检查职位表自增主键值
+            DBTools.checkDBIdent("job");
+        } catch (Exception e) {
+            //输出错误信息
+            e.printStackTrace();
+        } finally {
+            //释放数据库连接资源
+            DBTools.closeDBResource(null, ps, conn);
+        }
+    }
 }

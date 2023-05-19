@@ -23,6 +23,28 @@ public class DBTools {
         //返回数据库链接对象
         return connection;
     }
+
+    public static void checkDBIdent(String tableName) {
+        //检查表自增键及标识符，防止增添数据时发生错误
+        Connection connection = getConn();
+        Statement stmt = null;
+        String sql1 = "DBCC CHECKIDENT ( " + tableName + ", NORESEED)";
+        String sql2 = "DBCC CHECKIDENT ( " + tableName + ", RESEED)";
+        try {
+            //编译SQL语句并执行
+            stmt = connection.createStatement();
+            stmt.executeUpdate(sql1);
+            stmt = connection.createStatement();
+            stmt.executeUpdate(sql2);
+        } catch (Exception e) {
+            //输出错误信息
+            e.printStackTrace();
+        } finally {
+            //释放数据库连接资源
+            closeDBResource(null, stmt, connection);
+        }
+    }
+
     public static void closeDBResource(ResultSet rs, Statement stm, Connection con) {
         //释放数据库连接资源方法
         try {

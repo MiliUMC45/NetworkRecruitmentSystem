@@ -44,7 +44,7 @@
             </c:if>
             <c:if test="${user.kind == 'P'}">
                 <li>
-                    <a class="" href="#">已发布的职位</a>
+                    <a class="" href="PostedJobServlet?comId=${user.comId}">已发布的职位</a>
                 </li>
                 <hr/>
                 <li>
@@ -55,15 +55,18 @@
         <div class="line"></div>
         <div class="job-posted">
             <div class="job-action">
-                <button type="button" onclick="" class="job-action-button">发布新职位</button>
+                <a type="button" href="job_cu.jsp" class="job-action-button">发布新职位</a>
             </div>
             <ul class="job-list">
-                <c:forEach begin="1" end="4">
+                <c:forEach var="jobDate" items="${jobDate}">
                     <li>
-                        <div class="job-name">name</div>
-                        <div class="job-pay">pay</div>
-                        <div class="job-introduce">introduce</div>
-                        <button type="button" onclick="" class="delete-button">删除职位</button>
+                        <div class="job-name">${jobDate.jobName}</div>
+                        <div class="job-pay">${jobDate.pay}</div>
+                        <div class="job-introduce">${jobDate.introduction}</div>
+                        <div class="job-button-list">
+                            <a type="button" href="JobCUServlet?jobId=${jobDate.jobId}&action=Query">修改职位</a>
+                            <a type="button" href="JobCUServlet?jobId=${jobDate.jobId}&action=Delete">删除职位</a>
+                        </div>
                     </li>
                 </c:forEach>
             </ul>

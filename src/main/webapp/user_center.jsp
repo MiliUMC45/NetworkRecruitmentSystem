@@ -44,7 +44,7 @@ To change this template use File | Settings | File Templates.
             </c:if>
             <c:if test="${user.kind == 'P'}">
                 <li>
-                    <a class="" href="posted_job.jsp">已发布的职位</a>
+                    <a class="" href="PostedJobServlet?comId=${user.comId}">已发布的职位</a>
                 </li>
                 <hr/>
                 <li>

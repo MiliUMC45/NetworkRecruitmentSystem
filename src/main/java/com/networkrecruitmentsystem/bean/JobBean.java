@@ -15,6 +15,28 @@ public class JobBean {  //职位数据封装类
         this.jobId = jobId;
     }
 
+    public JobBean(int jobId, String jobName, String pay, String introduction) {
+        this.jobId = jobId;
+        this.jobName = jobName;
+        this.pay = pay;
+        this.introduction = introduction;
+    }
+
+    public JobBean(String jobName, String pay, int companyId, String introduction) {
+        this.jobName = jobName;
+        this.pay = pay;
+        this.companyId = companyId;
+        this.introduction = introduction;
+    }
+
+    public JobBean(int jobId, String jobName, String pay, int companyId, String introduction) {
+        this.jobId = jobId;
+        this.jobName = jobName;
+        this.pay = pay;
+        this.companyId = companyId;
+        this.introduction = introduction;
+    }
+
     //各变量getter和setter方法
     public int getJobId() {
         return jobId;

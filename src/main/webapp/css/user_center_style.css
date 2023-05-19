@@ -77,6 +77,8 @@
     background-color: white;
     border: #1956b4 2px solid;
     border-radius: 7px;
+    outline: none;
+    text-decoration: none;
 }
 
 .job-action-button:hover {
@@ -93,6 +95,55 @@
 
 .job-list li {
     display: flex;
-    width: 980px;
-    height: 40px;
+    flex-direction: row;
+    width: 970px;
+    height: 60px;
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    border: #1956b4 2px solid;
+    border-radius: 5px;
+}
+
+.job-name {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+}
+
+.job-pay {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+}
+
+.job-introduce {
+    display: flex;
+    flex-direction: row;
+    width: 530px;
+    overflow: hidden;
+}
+
+.job-button-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    border-left: #1956b4 2px solid;
+}
+
+.job-button-list a {
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+    color: #1956b4;
+    flex-direction: row;
+    width: 70px;
+    outline: none;
+    text-decoration: none;
+}
+
+.job-button-list a:hover {
+    color: white;
+    background-color: #1956b4;
 }

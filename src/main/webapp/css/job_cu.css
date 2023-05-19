@@ -1,0 +1,44 @@
+#main-page {
+    width: 1200px;
+    min-height: 900px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    margin: auto;
+}
+
+.job-info-frame {
+    display: flex;
+    flex-direction: column;
+}
+
+.tip-text {
+    display: flex;
+    flex-direction: row;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.NP-input {
+    display: block;
+    width: 800px;
+    height: 60px;
+    padding: 5px;
+    font-size: medium;
+    font-family: 宋体;
+}
+
+.intro-input {
+    display: block;
+    width: 800px;
+    height: 400px;
+    padding: 5px;
+    font-size: medium;
+    font-family: 宋体;
+}
+
+.submit-button {
+    display: block;
+    width: 120px;
+    height: 60px;
+}
