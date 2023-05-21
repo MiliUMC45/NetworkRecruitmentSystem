@@ -1,0 +1,42 @@
+#main-page {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 1200px;
+    min-height: 800px;
+    background-color: white;
+}
+
+.brief-introduction {
+    width: 1200px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.job-name {
+    display: flex;
+    width: 760px;
+    height: 180px;
+    padding: 10px 20px;
+    font-size: xx-large;
+    font-weight: bold;
+    color: black;
+}
+
+.job-pay {
+    display: flex;
+    width: 360px;
+    height: 180px;
+    padding: 10px 20px;
+    font-size: larger;
+    font-weight: bold;
+    color: red;
+}
+
+.job-introduce {
+    display: flex;
+    width: 1160px;
+    padding: 10px 20px;
+    white-space:pre-line;
+}

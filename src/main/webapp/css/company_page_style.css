@@ -3,3 +3,129 @@
     height: 100%;
     margin: auto;
 }
+#search-box {
+    width: 900px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    overflow: auto;
+}
+#company-search-from {
+    width: 900px;
+    height: 54px;
+    position: absolute;
+    margin-top: 40px;
+    background-color: white;
+    border: #1956b4 2px solid;
+    border-radius: 7px;
+    font-size: 0;
+}
+#company-search-input {
+    width: 790px;
+    height: 50px;
+    margin: 1px 10px;
+    border: 0;
+    background-color: transparent;
+    font-size: large;
+}
+#company-search-input:focus {
+    outline: none;
+}
+
+#company-search-submit {
+    width: 90px;
+    height: 54px;
+    border: 0;
+    background-color: #1956b4;
+    color: white;
+    font-size: medium;
+    font-weight: bolder;
+}
+.company-frame {
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+.company-item {
+    width: 540px;
+    height: 110px;
+    margin: 0 15px 35px 15px;
+    padding: 10px 15px;
+    border-radius: 7px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+.company {
+    width: 250px;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+}
+
+.company-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+}
+.company-info {
+    width: 170px;
+    height: 100px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.company-name {
+    width: 170px;
+    height: 45px;
+    display: flex;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.company-kind {
+    width: 170px;
+    height: 25px;
+    display: flex;
+    color: gray;
+    font-size: medium;
+}
+.job-name {
+    width: 290px;
+    height: 70px;
+    display: flex;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+.curPage {
+    width: 1200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.curPage a {
+    width: 39px;
+    height: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1956b4;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: bold;
+}
+.curPage a:hover {
+    background-color: gray;
+}
+.job-info {
+    width: 290px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+}

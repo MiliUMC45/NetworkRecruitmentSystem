@@ -15,7 +15,7 @@
         <ul id="header-ul1">
             <li><a class="header-option" href="MainPageServlet">首页</a></li>
             <li><a class="header-option" href="JobPageServlet">求职</a></li>
-            <li><a class="header-option" href="company_page.jsp">公司</a></li>
+            <li><a class="header-option" href="CompanyPageServlet">公司</a></li>
         </ul>
         <ul id="header-ul2">
             <c:if test="${empty user}">
